@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B33968BA15E7BAED0087D048 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33968B915E7BAED0087D048 /* UIKit.framework */; };
+		B33968BC15E7BAED0087D048 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33968BB15E7BAED0087D048 /* Foundation.framework */; };
+		B33968BE15E7BAED0087D048 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33968BD15E7BAED0087D048 /* CoreGraphics.framework */; };
+		B33968C415E7BAED0087D048 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B33968C215E7BAED0087D048 /* InfoPlist.strings */; };
+		B33968C615E7BAED0087D048 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B33968C515E7BAED0087D048 /* main.m */; };
+		B33968CA15E7BAEE0087D048 /* SFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B33968C915E7BAEE0087D048 /* SFAppDelegate.m */; };
+		B33968D215E7BAEE0087D048 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33968D115E7BAEE0087D048 /* SenTestingKit.framework */; };
+		B33968D315E7BAEE0087D048 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33968B915E7BAED0087D048 /* UIKit.framework */; };
+		B33968D415E7BAEE0087D048 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33968BB15E7BAED0087D048 /* Foundation.framework */; };
+		B33968DC15E7BAEE0087D048 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B33968DA15E7BAEE0087D048 /* InfoPlist.strings */; };
+		B33968DF15E7BAEE0087D048 /* SFSingletonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B33968DE15E7BAEE0087D048 /* SFSingletonTests.m */; };
+		B33968F415E7BC410087D048 /* TTGlobalCore.m in Sources */ = {isa = PBXBuildFile; fileRef = B33968F315E7BC410087D048 /* TTGlobalCore.m */; };
+		B33968F915E7BC790087D048 /* SFSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B33968F815E7BC790087D048 /* SFSingletonObject.m */; };
+		B33968FD15E7BC800087D048 /* SFSampleSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = B33968FC15E7BC800087D048 /* SFSampleSingleton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B33968D515E7BAEE0087D048 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B33968AC15E7BAED0087D048 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B33968B415E7BAED0087D048;
+			remoteInfo = SFSingleton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B33968B515E7BAED0087D048 /* SFSingleton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFSingleton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B33968B915E7BAED0087D048 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B33968BB15E7BAED0087D048 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B33968BD15E7BAED0087D048 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B33968C115E7BAED0087D048 /* SFSingleton-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SFSingleton-Info.plist"; sourceTree = "<group>"; };
+		B33968C315E7BAED0087D048 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B33968C515E7BAED0087D048 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B33968C715E7BAED0087D048 /* SFSingleton-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SFSingleton-Prefix.pch"; sourceTree = "<group>"; };
+		B33968C815E7BAED0087D048 /* SFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAppDelegate.h; sourceTree = "<group>"; };
+		B33968C915E7BAEE0087D048 /* SFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFAppDelegate.m; sourceTree = "<group>"; };
+		B33968D015E7BAEE0087D048 /* SFSingletonTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFSingletonTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B33968D115E7BAEE0087D048 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B33968D915E7BAEE0087D048 /* SFSingletonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SFSingletonTests-Info.plist"; sourceTree = "<group>"; };
+		B33968DB15E7BAEE0087D048 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B33968DD15E7BAEE0087D048 /* SFSingletonTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFSingletonTests.h; sourceTree = "<group>"; };
+		B33968DE15E7BAEE0087D048 /* SFSingletonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFSingletonTests.m; sourceTree = "<group>"; };
+		B33968F115E7BC410087D048 /* TTCorePreprocessorMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTCorePreprocessorMacros.h; sourceTree = "<group>"; };
+		B33968F215E7BC410087D048 /* TTGlobalCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGlobalCore.h; sourceTree = "<group>"; };
+		B33968F315E7BC410087D048 /* TTGlobalCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTGlobalCore.m; sourceTree = "<group>"; };
+		B33968F715E7BC790087D048 /* SFSingletonObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSingletonObject.h; sourceTree = "<group>"; };
+		B33968F815E7BC790087D048 /* SFSingletonObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSingletonObject.m; sourceTree = "<group>"; };
+		B33968FB15E7BC800087D048 /* SFSampleSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSampleSingleton.h; sourceTree = "<group>"; };
+		B33968FC15E7BC800087D048 /* SFSampleSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSampleSingleton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B33968B215E7BAED0087D048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33968BA15E7BAED0087D048 /* UIKit.framework in Frameworks */,
+				B33968BC15E7BAED0087D048 /* Foundation.framework in Frameworks */,
+				B33968BE15E7BAED0087D048 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B33968CC15E7BAEE0087D048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33968D215E7BAEE0087D048 /* SenTestingKit.framework in Frameworks */,
+				B33968D315E7BAEE0087D048 /* UIKit.framework in Frameworks */,
+				B33968D415E7BAEE0087D048 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B33968AA15E7BAED0087D048 = {
+			isa = PBXGroup;
+			children = (
+				B33968FA15E7BC800087D048 /* Sample */,
+				B33968F615E7BC790087D048 /* Classes */,
+				B33968F015E7BC410087D048 /* Dependencies */,
+				B33968BF15E7BAED0087D048 /* SFSingleton */,
+				B33968D715E7BAEE0087D048 /* SFSingletonTests */,
+				B33968B815E7BAED0087D048 /* Frameworks */,
+				B33968B615E7BAED0087D048 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B33968B615E7BAED0087D048 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B33968B515E7BAED0087D048 /* SFSingleton.app */,
+				B33968D015E7BAEE0087D048 /* SFSingletonTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B33968B815E7BAED0087D048 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B33968B915E7BAED0087D048 /* UIKit.framework */,
+				B33968BB15E7BAED0087D048 /* Foundation.framework */,
+				B33968BD15E7BAED0087D048 /* CoreGraphics.framework */,
+				B33968D115E7BAEE0087D048 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B33968BF15E7BAED0087D048 /* SFSingleton */ = {
+			isa = PBXGroup;
+			children = (
+				B33968C815E7BAED0087D048 /* SFAppDelegate.h */,
+				B33968C915E7BAEE0087D048 /* SFAppDelegate.m */,
+				B33968C015E7BAED0087D048 /* Supporting Files */,
+			);
+			path = SFSingleton;
+			sourceTree = "<group>";
+		};
+		B33968C015E7BAED0087D048 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B33968C115E7BAED0087D048 /* SFSingleton-Info.plist */,
+				B33968C215E7BAED0087D048 /* InfoPlist.strings */,
+				B33968C515E7BAED0087D048 /* main.m */,
+				B33968C715E7BAED0087D048 /* SFSingleton-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B33968D715E7BAEE0087D048 /* SFSingletonTests */ = {
+			isa = PBXGroup;
+			children = (
+				B33968DD15E7BAEE0087D048 /* SFSingletonTests.h */,
+				B33968DE15E7BAEE0087D048 /* SFSingletonTests.m */,
+				B33968D815E7BAEE0087D048 /* Supporting Files */,
+			);
+			path = SFSingletonTests;
+			sourceTree = "<group>";
+		};
+		B33968D815E7BAEE0087D048 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B33968D915E7BAEE0087D048 /* SFSingletonTests-Info.plist */,
+				B33968DA15E7BAEE0087D048 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B33968F015E7BC410087D048 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				B33968F115E7BC410087D048 /* TTCorePreprocessorMacros.h */,
+				B33968F215E7BC410087D048 /* TTGlobalCore.h */,
+				B33968F315E7BC410087D048 /* TTGlobalCore.m */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		B33968F615E7BC790087D048 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B33968F715E7BC790087D048 /* SFSingletonObject.h */,
+				B33968F815E7BC790087D048 /* SFSingletonObject.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B33968FA15E7BC800087D048 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				B33968FB15E7BC800087D048 /* SFSampleSingleton.h */,
+				B33968FC15E7BC800087D048 /* SFSampleSingleton.m */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B33968B415E7BAED0087D048 /* SFSingleton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B33968E215E7BAEE0087D048 /* Build configuration list for PBXNativeTarget "SFSingleton" */;
+			buildPhases = (
+				B33968B115E7BAED0087D048 /* Sources */,
+				B33968B215E7BAED0087D048 /* Frameworks */,
+				B33968B315E7BAED0087D048 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SFSingleton;
+			productName = SFSingleton;
+			productReference = B33968B515E7BAED0087D048 /* SFSingleton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B33968CF15E7BAEE0087D048 /* SFSingletonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B33968E515E7BAEE0087D048 /* Build configuration list for PBXNativeTarget "SFSingletonTests" */;
+			buildPhases = (
+				B33968CB15E7BAEE0087D048 /* Sources */,
+				B33968CC15E7BAEE0087D048 /* Frameworks */,
+				B33968CD15E7BAEE0087D048 /* Resources */,
+				B33968CE15E7BAEE0087D048 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B33968D615E7BAEE0087D048 /* PBXTargetDependency */,
+			);
+			name = SFSingletonTests;
+			productName = SFSingletonTests;
+			productReference = B33968D015E7BAEE0087D048 /* SFSingletonTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B33968AC15E7BAED0087D048 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SF;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = hand;
+			};
+			buildConfigurationList = B33968AF15E7BAED0087D048 /* Build configuration list for PBXProject "SFSingleton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B33968AA15E7BAED0087D048;
+			productRefGroup = B33968B615E7BAED0087D048 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B33968B415E7BAED0087D048 /* SFSingleton */,
+				B33968CF15E7BAEE0087D048 /* SFSingletonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B33968B315E7BAED0087D048 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33968C415E7BAED0087D048 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B33968CD15E7BAEE0087D048 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33968DC15E7BAEE0087D048 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B33968CE15E7BAEE0087D048 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B33968B115E7BAED0087D048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33968C615E7BAED0087D048 /* main.m in Sources */,
+				B33968CA15E7BAEE0087D048 /* SFAppDelegate.m in Sources */,
+				B33968F415E7BC410087D048 /* TTGlobalCore.m in Sources */,
+				B33968F915E7BC790087D048 /* SFSingletonObject.m in Sources */,
+				B33968FD15E7BC800087D048 /* SFSampleSingleton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B33968CB15E7BAEE0087D048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33968DF15E7BAEE0087D048 /* SFSingletonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B33968D615E7BAEE0087D048 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B33968B415E7BAED0087D048 /* SFSingleton */;
+			targetProxy = B33968D515E7BAEE0087D048 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B33968C215E7BAED0087D048 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B33968C315E7BAED0087D048 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B33968DA15E7BAEE0087D048 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B33968DB15E7BAEE0087D048 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B33968E015E7BAEE0087D048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B33968E115E7BAEE0087D048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B33968E315E7BAEE0087D048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SFSingleton/SFSingleton-Prefix.pch";
+				INFOPLIST_FILE = "SFSingleton/SFSingleton-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B33968E415E7BAEE0087D048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SFSingleton/SFSingleton-Prefix.pch";
+				INFOPLIST_FILE = "SFSingleton/SFSingleton-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B33968E615E7BAEE0087D048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SFSingleton.app/SFSingleton";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SFSingleton/SFSingleton-Prefix.pch";
+				INFOPLIST_FILE = "SFSingletonTests/SFSingletonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B33968E715E7BAEE0087D048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SFSingleton.app/SFSingleton";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SFSingleton/SFSingleton-Prefix.pch";
+				INFOPLIST_FILE = "SFSingletonTests/SFSingletonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B33968AF15E7BAED0087D048 /* Build configuration list for PBXProject "SFSingleton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B33968E015E7BAEE0087D048 /* Debug */,
+				B33968E115E7BAEE0087D048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B33968E215E7BAEE0087D048 /* Build configuration list for PBXNativeTarget "SFSingleton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B33968E315E7BAEE0087D048 /* Debug */,
+				B33968E415E7BAEE0087D048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B33968E515E7BAEE0087D048 /* Build configuration list for PBXNativeTarget "SFSingletonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B33968E615E7BAEE0087D048 /* Debug */,
+				B33968E715E7BAEE0087D048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B33968AC15E7BAED0087D048 /* Project object */;
+}
