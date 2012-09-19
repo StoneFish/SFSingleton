@@ -22,7 +22,7 @@ static NSMutableDictionary * _gSingltonSet;
     @synchronized(self){
         if ([_gSingltonSet valueForKey:className] == nil)
         {
-            id object = [[self alloc] init];
+            id object = [[[self alloc] init] autorelease];
             [_gSingltonSet setObject:object forKey:className];
         }
     }
