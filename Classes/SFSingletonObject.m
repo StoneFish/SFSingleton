@@ -8,33 +8,33 @@
 
 #import "SFSingletonObject.h"
 
-static NSMutableDictionary * _gSingltonSet;
+static NSMutableDictionary * _gSFSingltonDictionary;
 
 @implementation SFSingletonObject
 
 +(id)shareObject
 {
-    if (_gSingltonSet == nil) {
-        _gSingltonSet =[[NSMutableDictionary alloc]init];
+    if (_gSFSingltonDictionary == nil) {
+        _gSFSingltonDictionary =[[NSMutableDictionary alloc]init];
     }
     
     NSString * className = [NSString stringWithUTF8String:object_getClassName(self)];
     @synchronized(self){
-        if ([_gSingltonSet valueForKey:className] == nil)
+        if ([_gSFSingltonDictionary valueForKey:className] == nil)
         {
-            id object = [[[self alloc] init] autorelease];
-            [_gSingltonSet setObject:object forKey:className];
+            id object = [[NSAllocateObject([super class], 0, NULL) init] autorelease];
+            [_gSFSingltonDictionary setObject:object forKey:className];
         }
     }
-    return  [_gSingltonSet valueForKey:className];
+    return  [_gSFSingltonDictionary valueForKey:className];
 }
 
 +(id) allocWithZone:(NSZone *)zone{
     @synchronized(self){
         NSString * className = [NSString stringWithUTF8String:object_getClassName(self)];
-        if ([_gSingltonSet valueForKey:className] == nil) {
+        if ([_gSFSingltonDictionary valueForKey:className] == nil) {
             id object = [super allocWithZone:zone];
-            [_gSingltonSet setValue:object forKey:className];
+            [_gSFSingltonDictionary setValue:object forKey:className];
             return  object;
         }
     }
